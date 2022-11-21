@@ -97,3 +97,4 @@ Constructs
 
 functions
     - variadic functions
+    - anonymous functions
