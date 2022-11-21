@@ -95,3 +95,5 @@ Constructs
     switch case
     for
 
+functions
+    - variadic functions
