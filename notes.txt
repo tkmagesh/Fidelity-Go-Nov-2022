@@ -1,0 +1,68 @@
+Magesh Kuppan
+
+Schedule:
+    Commence    : 9:30 AM
+    Tea Break   : 11:00 AM (15 mins)
+    Lunch Break : 1:00 PM (1 hour)
+    Tea Break   : 3:30 PM (15 mins)
+    Wind up     : 5:30 PM
+
+Methodology:
+    * No Powerpoint
+    * 100% hands on driven
+
+Software Requirements:
+    * Go tools (https://go.dev/dl)
+    * Visual Studio Code (https://code.visualstudio.com)
+
+Why Golang?
+    * Simplicity
+        Only 25 keywords
+        - No access modifier
+        - No classes (only structs)
+        - No inheritance (only composition)
+        - No exceptions (only errors)
+        - No "try catch finally" (errors are simple values)
+        - No reference types (everything is a value in Go)
+        - No pointer arithmetic
+        - No implicit type conversions (every type conversion has to be explicit)
+    * Close to hardware
+        - high performance (equivalent to C++)
+        - No VM ( JVM / CLR )
+        - Cross compilation
+    * Concurrency
+        - Concurrency features are built in the language
+            go keyword, channel data type, channel operator ( <- ), range & select constructs
+        - Standard Library APIs
+            * sync package
+            * sync/atomic package 
+
+What is Concurrency?
+    * Ability to have more than one execution path
+
+    * Cooperative Multitasking
+    * Preemptive Multitasking
+    
+
+Running a go program
+    go run <program.go>
+
+Creating a build
+    go build <program.go>
+    go build -o <build_name> <program.go>
+
+Get the List of environment variables (go tools)
+    go env
+
+To get the list of GOOS/GOARCH combination suppored 
+    go tool dist list
+
+To change the environment variables
+    go env -w <env-1>=<val-1> <env-2>=<val-2>
+    ex: go env -w GOOS=windows GOARCH=386
+
+To cross compile 
+    GOOS=<target_os> GOARCH=<target_arch> go build -o <build_name> <program.go>
+    ex: GOOS=windows GOARCH=386 go build 01-hello-world.go
+
+    
