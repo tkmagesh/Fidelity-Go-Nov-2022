@@ -5,11 +5,6 @@ import "fmt"
 
 func main() {
 	say_hi()
-}
-
-//01 - basics
-func say_hi() {
-	fmt.Println("Hi there!")
 	greet("Magesh")
 	fmt.Println(getGreetMsg("Suresh"))
 	fmt.Println("100 + 200 =", add(100, 200))
@@ -33,6 +28,12 @@ func say_hi() {
 
 	q, _ := divide(100, 7)
 	fmt.Printf("Dividing 100 by 7, quotient = %d\n", q)
+}
+
+//01 - basics
+func say_hi() {
+	fmt.Println("Hi there!")
+
 }
 
 //02 - with parameters

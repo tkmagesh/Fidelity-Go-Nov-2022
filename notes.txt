@@ -98,3 +98,7 @@ Constructs
 functions
     - variadic functions
     - anonymous functions
+    - higher order functions (functions as first class objects)
+        - assign functions to variables
+        - pass functions as arguments 
+        - return functions as return values
