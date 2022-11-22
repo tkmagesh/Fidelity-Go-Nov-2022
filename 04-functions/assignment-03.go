@@ -25,19 +25,28 @@ func main() {
 }
 
 func process(userChoice, n1, n2 int) {
-	var result int
-	switch userChoice {
-	case 1:
-		result = n1 + n2
-	case 2:
-		result = n1 - n2
-	case 3:
-		result = n1 * n2
-	case 4:
-		result = n1 / n2
-	}
+	operation := getOperationByUserChoice(userChoice)
+	result := operation(n1, n2)
 	fmt.Println("Result :", result)
 }
+
+func getOperationByUserChoice(userChoice int) func(int, int) int {
+	switch userChoice {
+	case 1:
+		return add
+	case 2:
+		return subtract
+	case 3:
+		return multiply
+	case 4:
+		return divide
+	default:
+		return func(i1, i2 int) int {
+			return 0
+		}
+	}
+}
+
 func getUserChoice() int {
 	var userChoice int
 	fmt.Println("1. Add")
