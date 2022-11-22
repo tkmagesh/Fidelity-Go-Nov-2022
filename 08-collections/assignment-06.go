@@ -7,13 +7,21 @@ package main
 import "fmt"
 
 func main() {
+	primeNos := generatePrimes(3, 100)
+	fmt.Println(primeNos)
+}
+
+func generatePrimes(start, end int) []int {
+	// result := []int{}
+	var result []int
 LOOP:
-	for no := 3; no <= 100; no++ {
+	for no := start; no <= end; no++ {
 		for i := 2; i < no; i++ {
 			if no%i == 0 { // no is not a prime number
 				continue LOOP
 			}
 		}
-		fmt.Println("Prime No :", no)
+		result = append(result, no)
 	}
+	return result
 }
