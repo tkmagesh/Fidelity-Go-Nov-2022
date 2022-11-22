@@ -1,9 +1,9 @@
 package calculator
 
-func Add(x, y int) int {
-	return x + y
-}
+import "fmt"
 
-func Subtract(x, y int) int {
-	return x - y
+var opCount int
+
+func PrintStats() {
+	fmt.Println("Operation Count :", opCount)
 }
