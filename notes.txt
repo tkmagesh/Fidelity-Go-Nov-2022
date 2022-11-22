@@ -102,3 +102,10 @@ functions
         - assign functions to variables
         - pass functions as arguments 
         - return functions as return values
+
+Errors
+    Just values returned from functions
+    Any value that implements the "error" interface
+    Creating errors
+        errors.New()
+        fmt.Errorf()
