@@ -33,7 +33,6 @@ func main() {
 //01 - basics
 func say_hi() {
 	fmt.Println("Hi there!")
-
 }
 
 //02 - with parameters
