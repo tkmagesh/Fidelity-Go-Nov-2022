@@ -119,3 +119,22 @@ Collections
         
     Map
         collection of key/value pairs
+
+Modularity
+    Module => application
+        A folder with go.mod file
+    Package => internal organization of the application
+        Folder with go files
+
+        
+    To create a module
+        go mod init <module_name>
+            advisable : module_name === repository path of the module
+            contains the module name, go version, dependencies info
+
+    To run a module
+        go run .
+
+    To create a build
+        go build .
+        go build -o <binary_name> .
