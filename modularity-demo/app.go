@@ -3,12 +3,17 @@ package main
 import (
 	"fmt"
 
-	"github.com/tkmagesh/fidelity-go-nov-2022/modularity-demo/calculator"
+	"modularity-demo/calculator"
+	"modularity-demo/calculator/utils"
+
+	"github.com/fatih/color"
 )
 
 func main() {
-	fmt.Println("modularity-demo executed")
+	color.Red("modularity-demo executed")
 	fmt.Println(calculator.Add(100, 200))
 	fmt.Println(calculator.Subtract(100, 200))
-	fmt.Println(calculator.PrintStats())
+	fmt.Println(calculator.Multiply(100, 200))
+	calculator.PrintStats()
+	fmt.Println(utils.IsEven(21))
 }

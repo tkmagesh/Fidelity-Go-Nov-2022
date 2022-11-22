@@ -138,3 +138,28 @@ Modularity
     To create a build
         go build .
         go build -o <binary_name> .
+
+    To install a 3rd party package
+        go get <package_name>
+        ex: go get github.com/fatih/color
+
+    To update a 3rd party package
+        go get -u <package_name>
+
+    To update the go.mod file
+        go mod tidy
+
+    Module cache (by default, all 3rd party modules are downloaded here)
+        $GOPATH/pkg
+
+    To localize the dependencies (for the application)
+        go mod vendor
+
+    to install as an executable ($GOPATH/bin)
+        go install <module_name>
+        OR
+        go install .
+
+    Other useful commands
+        go mod graph
+        go mod why <module>
