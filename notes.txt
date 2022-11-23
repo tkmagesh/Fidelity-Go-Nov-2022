@@ -195,4 +195,8 @@ Concurrency
             ch <- 100
         Receive Operation
             data := <- ch
-        
+
+        IMPORTANT:
+            - A RECEIVE operation is ALWAYS a blocking operation
+            - A SEND operation is blocked UNTIL a receive operation is initiated (conditions apply)
+                In other words, a SEND operation can be successful ONLY if a RECEIVE is already initiated
