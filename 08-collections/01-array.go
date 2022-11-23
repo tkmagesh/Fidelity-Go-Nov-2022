@@ -25,13 +25,19 @@ func main() {
 	fmt.Println("newNos =", newNos)
 
 	fmt.Println("Sorting")
-	sort(nos)
+	sort(&nos)
+	fmt.Println("After sorting")
 	fmt.Println(nos)
 }
 
-func sort(list [5]int) {
+func sort(list *[5]int) {
 	for i := 0; i < 4; i++ {
 		for j := i + 1; j < 5; j++ {
+			/*
+				if (*list)[i] > (*list)[j] {
+					(*list)[i], (*list)[j] = (*list)[j], (*list)[i]
+				}
+			*/
 			if list[i] > list[j] {
 				list[i], list[j] = list[j], list[i]
 			}

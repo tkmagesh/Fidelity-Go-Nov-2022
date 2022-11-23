@@ -163,3 +163,8 @@ Modularity
     Other useful commands
         go mod graph
         go mod why <module>
+
+OOP
+    Structs
+        Alternative for classes in golang
+        
