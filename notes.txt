@@ -132,8 +132,8 @@ Modularity
             advisable : module_name === repository path of the module
             contains the module name, go version, dependencies info
 
-    To run a module
         go run .
+    To run a module
 
     To create a build
         go build .
