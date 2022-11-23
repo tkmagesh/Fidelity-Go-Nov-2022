@@ -168,3 +168,7 @@ OOP
     Structs
         Alternative for classes in golang
         inheritance is achieved using composition
+
+Concurrency
+    - DO NOT assume the sequence in which the goroutines are executed
+    - DO NOT assume the time taken for a goroutine to complete
