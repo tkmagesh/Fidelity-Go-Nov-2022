@@ -167,4 +167,4 @@ Modularity
 OOP
     Structs
         Alternative for classes in golang
-        
+        inheritance is achieved using composition
