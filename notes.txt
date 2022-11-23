@@ -178,3 +178,21 @@ Concurrency
     
     To create a build with race detector (DO NOT do this in production build)
         go build --race <program.go>
+
+    Channels (data type for enabling communication between goroutines)
+        Declaration
+            var <var_name> chan <data_type>
+            ex.
+                var ch chan int
+
+        Instance creation
+            <var_name> = make(chan <data_type>)
+            ex.
+                ch = make(chan int)
+
+        channel operator (<-)
+        Send Operation
+            ch <- 100
+        Receive Operation
+            data := <- ch
+        
