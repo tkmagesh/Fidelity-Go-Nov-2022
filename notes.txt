@@ -172,3 +172,9 @@ OOP
 Concurrency
     - DO NOT assume the sequence in which the goroutines are executed
     - DO NOT assume the time taken for a goroutine to complete
+
+    To detect race conditions
+        go run --race <program.go>
+    
+    To create a build with race detector (DO NOT do this in production build)
+        go build --race <program.go>
